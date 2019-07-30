@@ -1,0 +1,9 @@
+@import './scss/variables';
+
+.product-series{
+	@extend .alert-success;
+	background-color: $alert-success-bg !important;
+}
+
+.product-movie{
+}

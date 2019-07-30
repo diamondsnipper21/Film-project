@@ -1,0 +1,6 @@
+@import './scss/variables';
+
+.product-false{
+	@extend .alert-danger;
+	background-color: #f2dede !important;
+}

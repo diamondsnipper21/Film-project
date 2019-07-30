@@ -1,0 +1,22 @@
+#home-carousel{
+	.item{
+		height: 500px;
+
+		section{
+			background: none!important;
+		}
+
+		.hero-text{
+			padding: 20px;
+			padding-top: 200px;
+			padding-bottom: 200px;
+			background: rgba(0,0,0,0.3);
+
+			h1, h2{
+				color: #fff;
+			}
+		}
+	}
+
+
+}

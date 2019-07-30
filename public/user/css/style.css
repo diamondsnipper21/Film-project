@@ -1,0 +1,12 @@
+.dl-horizontal dt {
+	width: 50px;
+}
+
+.dl-horizontal dd {
+	margin-left: 60px;
+}
+
+.layout-play, .layout-play #page-content{
+	background-color: #000;
+}
+

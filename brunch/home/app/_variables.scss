@@ -1,0 +1,55 @@
+$color-acc-text: #333332;
+$color-acc-main-nav-border: #e5e5e5;
+$color-acc-main-nav-border-bottom: #e8cfc7;
+$color-acc-main-nav-hover: #acb1b4;
+$color-acc-main-nav: #333332;
+$color-acc-footer-bg: #191919;
+$color-acc-footer: #919191;
+$color-acc-border: #acacac;
+$color-acc-border-light: #f7f7f7;
+$color-acc-pink: #e4344d;
+$color-acc-sky: #7bc4d2;
+$size-acc-medium: 2.229rem;
+$size-acc-large: 3.988rem;
+$size-acc-normal: 1.5rem;
+
+$viewport-xl-down: ".viewport-lg, .viewport-md, .viewport-sm, .viewport-xs";
+$viewport-lg-down: ".viewport-md, .viewport-sm, .viewport-xs";
+$viewport-md-down: ".viewport-sm, .viewport-xs";
+$viewport-md-up: ".viewport-lg, .viewport-xl";
+$viewport-lg-up: ".viewport-xl";
+
+$badgeSize: 50px;
+$colorTextBody: #333332;
+
+@mixin ac-link{
+  cursor: pointer;
+  position: relative;
+  text-decoration: none!important;
+  &:hover{
+    text-decoration: none;
+    &:after{
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      opacity: 1;
+    }  
+  }
+
+  &:after{
+    content: ''!important;
+    height: 1px;
+    background-color: #333;
+    width: calc(100% - 3px);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 0;
+    -webkit-transition: -webkit-transform .6s cubic-bezier(.165,.84,.44,1),opacity .6s cubic-bezier(.165,.84,.44,1);
+    transition: transform .6s cubic-bezier(.165,.84,.44,1),opacity .6s cubic-bezier(.165,.84,.44,1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    display: block;
+  }
+}
